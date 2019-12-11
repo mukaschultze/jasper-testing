@@ -1,0 +1,27 @@
+{
+  "name": "jasper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Muka Schultze",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "tsc",
+    "preversion": "npm run test && npm run lint",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "java": "^0.12.0",
+    "node-jasper": "file:../node-jasper"
+  },
+  "devDependencies": {
+    "@types/java": "^0.9.0",
+    "@types/node": "^12.12.16",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}
