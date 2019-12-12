@@ -17,7 +17,7 @@ async function generateReport(outputFile: string, jrxmlFile: string) {
         }
     });
 
-    return new Promise((resolve, reject) => {
+    await new Promise((resolve, reject) => {
         j.ready(async () => {
 
             const report = {
