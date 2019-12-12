@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "java": "^0.12.0",
-    "node-jasper": "file:../node-jasper"
+    "node-jasper": "^0.2.4"
   },
   "devDependencies": {
     "@types/java": "^0.9.0",
